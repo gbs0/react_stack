@@ -16,9 +16,9 @@ class Article extends Component {
   this.state = { clicked: false };
 	}
 
-	handleClick = () => {  // Fat arrow to reference self 
-		this.setState({			 // for this in state change
-			clicked: !this.state.clicked
+	handleClick = () => {  							// Fat arrow to reference self 
+		this.setState({			 							// for this in state change
+			clicked: !this.state.clicked		// Change the state
 		});
 	}
 

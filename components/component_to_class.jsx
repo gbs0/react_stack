@@ -9,16 +9,16 @@ import ReactDOM from 'react-dom';
 // }
 
 class Hello extends Component {			// Rewriting as class
-	constructor(props) {										// Must have a constructor method
+	constructor(props) {							// Must have a constructor method
 		super(props);
 		this.state = {
-			clicked: false
+			clicked: true;
 		};
 	}
 
 	render() {												// Must have a render method for build and return HTML
 		return(
-			<div>Hello {this.props.city}</div
+			<div>Hello {this.props.city}</div>
 		)
 	}											
 }
