@@ -18,7 +18,7 @@ class SimpleCard extends Component {			// Rewriting as class
 
 	render() {												// Must have a render method for build and return HTML
 		return(
-			<div>SimpleCard</div>
+			<div>SimpleCard {this.props.imageUrl}</div>
 		)
 	}											
 }
