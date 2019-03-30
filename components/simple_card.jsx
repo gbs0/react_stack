@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 // 	return <div> Hello World!</div>;
 // }
 
-class Card extends Component {			// Rewriting as class
+class SimpleCard extends Component {			// Rewriting as class
 	constructor(props) {							// Must have a constructor method
 		super(props);
 		this.state = {
@@ -18,7 +18,7 @@ class Card extends Component {			// Rewriting as class
 
 	render() {												// Must have a render method for build and return HTML
 		return(
-			<div>Hello {this.props.city}</div>
+			<div>SimpleCard</div>
 		)
 	}											
 }
@@ -28,5 +28,5 @@ const root = document.getElementById('root');
 // Render the element
 if (root) {
 	ReactDOM.render(
-		<Hello city="São Paulo" />, root);
+		<Image city="São Paulo" />, root);
 }
