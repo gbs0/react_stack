@@ -28,5 +28,5 @@ const root = document.getElementById('root');
 // Render the element
 if (root) {
 	ReactDOM.render(
-		<Image city="São Paulo" />, root);
+		<Image imageUrl="" />, root);
 }
