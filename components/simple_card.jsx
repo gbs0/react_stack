@@ -9,14 +9,14 @@ import ReactDOM from 'react-dom';
 // }
 
 class SimpleCard extends Component {			// Rewriting as class
-	constructor(props) {							// Must have a constructor method
+	constructor(props) {										// Must have a constructor method
 		super(props);
 		this.state = {
 			clicked: true;
 		};
 	}
 
-	render() {												// Must have a render method for build and return HTML
+	render() {															// Must have a render method for build and return HTML
 		return(
 			<div>
 			<img url={this.props.imageUrl}/>
@@ -32,9 +32,9 @@ const root = document.getElementById('root');
 // Render the element
 if (root) {
 	ReactDOM.render(
-		<SimpleCard imageUrl="",
-		title="",
-		description=""
+		<SimpleCard imageUrl="https://",
+		title="Name and Description",
+		description="Order Now!"
 		/>,
 		root);
 }
