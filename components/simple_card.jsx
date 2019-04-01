@@ -18,7 +18,11 @@ class SimpleCard extends Component {			// Rewriting as class
 
 	render() {												// Must have a render method for build and return HTML
 		return(
-			<div>SimpleCard {this.props.imageUrl}</div>
+			<div>
+			<img url={this.props.imageUrl}/>
+			<h2>SimpleCard {this.props.title}</h2>
+			<p>SimpleCard {this.props.description}</p>
+			</div>
 		)
 	}											
 }
@@ -28,5 +32,5 @@ const root = document.getElementById('root');
 // Render the element
 if (root) {
 	ReactDOM.render(
-		<Image imageUrl="" />, root);
+		?<Image imageUrl="" />?, root);
 }
