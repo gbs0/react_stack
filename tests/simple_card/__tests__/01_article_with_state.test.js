@@ -4,8 +4,7 @@ import Article from '../lib/simple_card.jsx';
 
 test('Article should produce the right HTML', () => {
   const simplecard = renderer.create(
-    <SimpleCard title="My fancy new product" body="Test it now!" />
-    <div><img></div>
+    <SimpleCard title="My fancy new product" body="Test it now!"/>
   );
 
   let tree = article.toJSON();

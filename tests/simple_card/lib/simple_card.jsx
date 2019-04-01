@@ -25,12 +25,12 @@ class SimpleCard extends Component {
 		return (
 	    <div className ={this.state.clicked ? "article clicked" : "article" }
 	    onClick={this.handleClick} >
-	    <img url={this.props.ImageUrl} style="width: 50px;">
+	    <img url={this.props.ImageUrl} style="width: 50px;"/>
 	    <h2 className="article-title" >
-	    My fancy new product
+	    	My fancy new product
       </h2>
       <p>
-        Test it now!
+      	Test it now!
       </p>
 	    </div>
 	  );
