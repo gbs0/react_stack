@@ -8,10 +8,9 @@ import React, { Component } from 'react';
 // TODO: code the `handleClick` function (which adds a 'clicked' class to the `.article`)
 
 // TODO: transform the following functional component into a class based component
-class Article extends Component {
+class SimpleCard extends Component {
   constructor (props) {
-  	super(props);
-  
+  	super(props);  
   // TODO: set the initial state { clicked: false }
   this.state = { clicked: false };
 	}
@@ -26,6 +25,7 @@ class Article extends Component {
 		return (
 	    <div className ={this.state.clicked ? "article clicked" : "article" }
 	    onClick={this.handleClick} >
+	    <img url="" style="width: 50px;">
 	    <h2 className="article-title" >
 	    My fancy new product
       </h2>
@@ -38,4 +38,4 @@ class Article extends Component {
 }
 
 // Export Class
-export default Article;
+export default SimpleCard;
