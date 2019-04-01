@@ -1,10 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Article from '../lib/01_article_with_state.jsx';
+import Article from '../lib/simple_card.jsx';
 
 test('Article should produce the right HTML', () => {
-  const article = renderer.create(
-    <Article title="My fancy new product" body="Test it now!" />
+  const simplecard = renderer.create(
+    <SimpleCard title="My fancy new product" body="Test it now!" />
+    <div></div>
   );
 
   let tree = article.toJSON();
