@@ -22,3 +22,5 @@ class Name extends Component {
 		return <h1>Hello, {this.state.name}!</h1>
 	}
 }
+
+export default Hello;
