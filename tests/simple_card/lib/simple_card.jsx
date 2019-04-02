@@ -29,7 +29,7 @@ class SimpleCard extends Component {
 	    <h2 className="simple-card-title" >
 	    	My fancy new product
       </h2>
-      <p>
+      <p className="simple-card-description">
       	Test it now!
       </p>
 	    </div>
