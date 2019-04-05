@@ -32,6 +32,7 @@ class FetchClass extends React.Component {
 			.then((user) => {
 				this.setState({user : user});
 			});
+		this.setState({xhr:xhr});
 	}
 
 	render() {
