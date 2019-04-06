@@ -2,13 +2,28 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+function stateSetter(context) {
+	var cancelled = false;
+	return {
+		cancel: function () {
+			cancelled = true;
+		},
+		setState(newState) {
+			if (!cancelled) {
+				context.setState(newState);
+			}
+		}
+	}
+}
 class FetchClass extends React.Component {
 	// Add constructor
 	constructor() {
 		super();
-
+		
+		this.setter = stateSetter(this);
 		this.state = {
-			user: {},
+			user : 'loading',
+			//user: {},
 			xhr: null
 		};
 	}
