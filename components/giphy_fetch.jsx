@@ -13,7 +13,7 @@ class FetchClass extends React.Component {
 		
 		this.setter = stateSetter(this);
 		this.state = {
-			search: {},
+			trends: {},
 			xhr: null
 		};
 	}
@@ -41,6 +41,6 @@ class FetchClass extends React.Component {
 	}
 
 	render() {
-		return <div>{this.state.user}</div>;
+		return <div>{this.state.trends}</div>;
 	}
 }
