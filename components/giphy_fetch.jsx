@@ -43,10 +43,10 @@ class Gifs extends React.Component {
 	render() {
 		return (
 		<div>
-	    <h1>Users</h1>
+	    <h1>Trending Gifs</h1>
 	    {
 				this.state.users.length == 0
-				? 'Loading users...'
+				? 'Loading gifs...'
 				: this.state.users.map(user => (
           <figure key={user.id}>
           <img src={user.avatar} />
