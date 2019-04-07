@@ -34,13 +34,13 @@ class Gif extends React.Component {
 	}
 
 	// Asynchronous function
-	fetchTrending() {
-		$.get('https://api.giphy.com/v1/gifs/trending')
-			.then((user) => {
-				this.setState({user : user});
-			});
-		this.setState({xhr:xhr});
-	}
+	// fetchTrending() {
+	// 	$.get('https://api.giphy.com/v1/gifs/trending')
+	// 		.then((user) => {
+	// 			this.setState({user : user});
+	// 		});
+	// 	this.setState({xhr:xhr});
+	// }
 
 	render() {
 		return (
