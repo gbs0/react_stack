@@ -8,6 +8,6 @@ Variable.PropTypes = {
 // Multiline blocks
 const LanguageList = ({languages}) => {
 	<ul>
-		{languages.map(language => <Language language={language} />)}
+		{languages.map(language => <Language language = {language} />)}
 	</ul>
 }
