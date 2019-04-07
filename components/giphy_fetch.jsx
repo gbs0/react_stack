@@ -8,12 +8,11 @@ const ranting = null;
 // Search example
 //const xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
 
-class FetchClass extends React.Component {
+class Gif extends React.Component {
 	// Add constructor
 	constructor() {
 		super();
 		
-		this.setter = stateSetter(this);
 		this.state = {
 			trends: {},
 			xhr: null
@@ -28,6 +27,7 @@ class FetchClass extends React.Component {
 			xhr.abort();
 		}
 	}
+	
 	// Check if component is mounted
 	componentDidMount() {
 		this.fetchTrending();
