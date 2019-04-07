@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 const api_key: "";
+const ranting = null;
 
-
+const xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
 
 class FetchClass extends React.Component {
 	// Add constructor
