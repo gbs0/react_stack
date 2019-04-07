@@ -27,20 +27,18 @@ class Gif extends React.Component {
 			xhr.abort();
 		}
 	}
-	
+
 	// Check if component is mounted
 	componentDidMount() {
 		this.fetchTrending();
 	}
 
 	// Asynchronous function
-	// fetchTrending() {
-	// 	$.get('https://api.giphy.com/v1/gifs/trending')
-	// 		.then((user) => {
-	// 			this.setState({user : user});
-	// 		});
-	// 	this.setState({xhr:xhr});
-	// }
+	fetchTrending() {
+		$.get('https://api.giphy.com/v1/gifs/trending') // Or http://api.giphy.com/v1/gifs/trending
+			.then(response => response.json())
+			.then(json => this.setState({ trends : json.data }));
+	}
 
 	render() {
 		return (
