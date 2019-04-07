@@ -43,6 +43,20 @@ class FetchClass extends React.Component {
 	}
 
 	render() {
-		return <div>{this.state.trends}</div>;
+		return (
+		<div>
+	    <h1>Users</h1>
+	    {
+				this.state.users.length == 0
+				? 'Loading users...'
+				: this.state.users.map(user => (
+          <figure key={user.id}>
+          <img src={user.avatar} />
+          <figcaption>
+            {user.name}
+          </figcaption>
+				</figure> ))
+			} </div>);
+		}
 	}
 }
