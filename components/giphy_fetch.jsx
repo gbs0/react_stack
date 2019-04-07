@@ -14,7 +14,7 @@ class Gif extends React.Component {
 		super();
 		
 		this.state = {
-			trends: {},
+			trends: {},			// Or array type { trends: [] }
 			xhr: null
 		};
 	}
